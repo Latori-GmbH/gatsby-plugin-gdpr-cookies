@@ -6,6 +6,7 @@ const {
   validHotjarId,
   validChatwootConfig,
   validLinkedinTrackingId,
+  validKlaviyoTrackingId,
   getCookie
 } = require('../helper')
 
@@ -47,6 +48,11 @@ const {
   addLinkedin,
   initializeLinkedin
 } = require('./linkedin')
+
+const {
+  addKlaviyo,
+  initializeKlaviyo
+} = require('./klaviyo')
 
 exports.initializeAndTrackGoogleAnalytics = (options, location) => {
   if (
@@ -131,6 +137,19 @@ exports.initializeLinkedin = (options) => {
     addLinkedin(options).then((status) => {
       if (status) {
         initializeLinkedin(options)
+      }
+    })
+  }
+}
+
+exports.initializeKlaviyo = (options) => {
+  if (
+    getCookie(options.cookieName) === `true` &&
+    validKlaviyoTrackingId(options)
+  ) {
+    addKlaviyo(options).then((status) => {
+      if (status) {
+        initializeKlaviyo(options)
       }
     })
   }

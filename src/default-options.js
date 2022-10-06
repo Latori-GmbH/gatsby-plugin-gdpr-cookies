@@ -24,5 +24,8 @@ export const defaultOptions = {
   },
   linkedin: {
     cookieName: 'gatsby-gdpr-linkedin'
+  },
+  klaviyo: {
+    cookieName: `gatsby-gdpr-klaviyo`
   }
 }
