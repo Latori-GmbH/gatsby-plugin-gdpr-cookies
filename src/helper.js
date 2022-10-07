@@ -33,6 +33,10 @@ exports.validLinkedinTrackingId = options =>
 exports.validKlaviyoTrackingId = options =>
   options.trackingId &&
   options.trackingId.trim() !== ``  
+  
+exports.validProvenExpertConfig = options =>
+  options.url &&
+  options.url.trim() !== ``
 
 exports.getCookie = name => {
   var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');

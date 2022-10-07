@@ -12,6 +12,7 @@ export const onClientEntry = (_, pluginOptions = {}) => {
   window.gatsbyPluginGDPRCookiesChatwootAdded = false
   window.gatsbyPluginGDPRCookiesLinkedinAdded = false
   window.gatsbyPluginGDPRCookiesKlaviyoAdded = false
+  window.gatsbyPluginGDPRCookiesProvenExpertAdded = false
 
   window.gatsbyPluginGDPRCookiesGoogleAnalyticsInitialized = false
   window.gatsbyPluginGDPRCookiesGoogleTagManagerInitialized = false
@@ -20,6 +21,7 @@ export const onClientEntry = (_, pluginOptions = {}) => {
   window.gatsbyPluginGDPRCookiesHotjarInitialized = false
   window.gatsbyPluginGDPRCookiesLinkedinInitialized = false
   window.gatsbyPluginGDPRCookiesKlaviyoInitialized = false
+  window.gatsbyPluginGDPRCookiesProvenExpertInitialized = false
 
   // google tag manager setup
   const { googleTagManager } = pluginOptions

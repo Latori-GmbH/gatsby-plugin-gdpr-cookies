@@ -7,6 +7,7 @@ const {
   validChatwootConfig,
   validLinkedinTrackingId,
   validKlaviyoTrackingId,
+  validProvenExpertConfig,
   getCookie
 } = require('../helper')
 
@@ -53,6 +54,10 @@ const {
   addKlaviyo,
   initializeKlaviyo
 } = require('./klaviyo')
+
+const {
+  addProvenExpert
+} = require('./proven-expert')
 
 exports.initializeAndTrackGoogleAnalytics = (options, location) => {
   if (
@@ -163,6 +168,18 @@ exports.initializeChatwoot = (options) => {
     addChatwoot(options).then((status) => {
       if (status) {
         console.info('Chat is added and running')
+      }
+    })
+  }
+}
+
+exports.initializeProvenExpert = (options) => {
+  if (
+    getCookie(options.cookieName) === `true` &&
+    validProvenExpertConfig(options)
+  ) {
+    addProvenExpert(options).then((status) => {
+      if (status) {
       }
     })
   }

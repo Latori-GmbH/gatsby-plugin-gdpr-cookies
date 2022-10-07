@@ -6,7 +6,8 @@ const {
   initializeAndTrackHotjar,
   initializeChatwoot,
   initializeLinkedin,
-  initializeKlaviyo
+  initializeKlaviyo,
+  initializeProvenExpert
 } = require('./services')
 
 const { isEnvironmentValid } = require('./helper')
@@ -26,6 +27,7 @@ exports.initializeAndTrack = (location) => {
       initializeChatwoot(options.chatwoot)
       initializeLinkedin(options.linkedin)
       initializeKlaviyo(options.klaviyo)
+      initializeProvenExpert(options.provenExpert)
     }
   }
 }
