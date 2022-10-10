@@ -28,7 +28,7 @@ export const defaultOptions = {
   klaviyo: {
     cookieName: `gatsby-gdpr-klaviyo`
   },
-  ProvenExpert: {
+  provenExpert: {
     cookieName: `gatsby-gdpr-proven-expert`
   }
 }
