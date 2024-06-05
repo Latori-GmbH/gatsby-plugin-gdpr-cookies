@@ -12,7 +12,6 @@ exports.addInspectlet = function (options) {
           s = d.getElementsByTagName(t)[0];
       g.defer = true;
       g.async = true;
-      g.id = "inspectement-id";
       g.innerHTML = `(function() {
         window.__insp = window.__insp || [];
         __insp.push(['wid', ${options.pixelId}]);
