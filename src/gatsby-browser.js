@@ -24,7 +24,7 @@ export const onClientEntry = (_, pluginOptions = {}) => {
   window.gatsbyPluginGDPRCookiesLinkedinInitialized = false
   window.gatsbyPluginGDPRCookiesKlaviyoInitialized = false
   window.gatsbyPluginGDPRCookiesProvenExpertInitialized = false
-  window.gatsbyPluginGDPRCookiesInspectementInitialized = false
+  window.gatsbyPluginGDPRCookiesInspectletInitialized = false
 
   // google tag manager setup
   const { googleTagManager } = pluginOptions
