@@ -62,7 +62,7 @@ const {
 
 const {
   addInspectlet
-} = reqquire('./inspecelet')
+} = require('./inspeclet')
 
 exports.initializeAndTrackGoogleAnalytics = (options, location) => {
   if (
