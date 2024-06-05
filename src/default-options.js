@@ -30,5 +30,8 @@ export const defaultOptions = {
   },
   provenExpert: {
     cookieName: `gatsby-gdpr-proven-expert`
+  },
+  inspectlet: {
+    cookieName: 'gatsby-gdpr-inspectlet-pixel'
   }
 }

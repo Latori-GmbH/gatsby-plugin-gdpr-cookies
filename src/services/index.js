@@ -8,6 +8,7 @@ const {
   validLinkedinTrackingId,
   validKlaviyoTrackingId,
   validProvenExpertConfig,
+  validInspectletConfig,
   getCookie
 } = require('../helper')
 
@@ -58,6 +59,10 @@ const {
 const {
   addProvenExpert
 } = require('./proven-expert')
+
+const {
+  addInspectlet
+} = reqquire('./inspecelet')
 
 exports.initializeAndTrackGoogleAnalytics = (options, location) => {
   if (
@@ -184,3 +189,11 @@ exports.initializeProvenExpert = (options) => {
     })
   }
 }
+
+exports.initializeInspectlet = function (options) {
+  if (getCookie(options.cookieName) === "true" && validInspectletConfig(options)) {
+    addInspectlet(options).then(function (status) {
+      if (status) {}
+    });
+  }
+};
