@@ -1,4 +1,4 @@
-var _require = require('gatsby-plugin-gdpr-cookies/src/helper'),
+var _require = require('../helper'),
     validInspectletConfig = _require.validInspectletConfig,
     getCookie = _require.getCookie;
 
