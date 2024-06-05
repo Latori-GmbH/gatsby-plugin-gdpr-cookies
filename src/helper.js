@@ -42,6 +42,10 @@ exports.validKlaviyoTrackingId = options =>
   options.pixelId &&
   options.pixelId.trim() !== ``  
 
+exports.validInspectletConfig = options =>
+  options.pixelId &&
+  options.pixelId.trim() !== ``
+
 exports.getCookie = name => {
   var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
   return v ? v[2] : null;

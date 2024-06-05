@@ -62,7 +62,7 @@ const {
 
 const {
   addInspectlet
-} = require('./inspeclet')
+} = require('./inspectlet')
 
 exports.initializeAndTrackGoogleAnalytics = (options, location) => {
   if (

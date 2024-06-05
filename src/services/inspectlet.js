@@ -1,5 +1,5 @@
 var _require = require('gatsby-plugin-gdpr-cookies/src/helper'),
-    validInspectletConfig = _require.validProvenExpertConfig,
+    validInspectletConfig = _require.validInspectletConfig,
     getCookie = _require.getCookie;
 
 exports.addInspectlet = function (options) {
