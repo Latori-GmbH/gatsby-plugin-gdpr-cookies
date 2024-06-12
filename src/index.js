@@ -7,10 +7,13 @@ const {
   initializeChatwoot,
   initializeLinkedin,
   initializeKlaviyo,
-  initializeProvenExpert
+  initializeProvenExpert,
+  initializeInspectlet
 } = require('./services')
 
 const { isEnvironmentValid } = require('./helper')
+const { initializeTikTokPixel } = require('./services/tiktok')
+
 
 exports.initializeAndTrack = (location) => {
   const options = window.gatsbyPluginGDPRCookiesOptions
@@ -28,6 +31,7 @@ exports.initializeAndTrack = (location) => {
       initializeLinkedin(options.linkedin)
       initializeKlaviyo(options.klaviyo)
       initializeProvenExpert(options.provenExpert)
+      initializeInspectlet(options.inspectlet);
     }
   }
 }

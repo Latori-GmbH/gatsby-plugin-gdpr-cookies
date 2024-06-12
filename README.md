@@ -212,6 +212,16 @@ Here you place your LinkedIn tracking ID.
 
 You can use a custom cookie name if you need to!
 
+### Inspectled
+
+#### `pixelId`
+
+Here you place your Inspectlet tracking ID.
+
+#### `cookieName`
+
+You can use a custom cookie name if you need to!
+
 ## Initialize and track
 This gatsby plugin now supports initializing and tracking right after a user accepts the cookie consent.
 
