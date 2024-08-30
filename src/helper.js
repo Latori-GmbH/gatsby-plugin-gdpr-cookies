@@ -28,19 +28,15 @@ exports.validChatwootConfig = options =>
 
 exports.validLinkedinTrackingId = options =>
   options.trackingId &&
-  options.trackingId.trim() !== ``  
+  options.trackingId.trim() !== ``
 
 exports.validKlaviyoTrackingId = options =>
   options.trackingId &&
-  options.trackingId.trim() !== ``  
-  
+  options.trackingId.trim() !== ``
+
 exports.validProvenExpertConfig = options =>
   options.url &&
   options.url.trim() !== ``
-
-exports.validKlaviyoTrackingId = options =>
-  options.pixelId &&
-  options.pixelId.trim() !== ``  
 
 exports.validInspectletConfig = options =>
   options.pixelId &&
